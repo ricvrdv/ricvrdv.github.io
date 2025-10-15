@@ -58,6 +58,7 @@
 									<li>SQL</li>
 									<li>HTML / CSS</li>
 									<li>Git</li>
+									<li>Bash</li>
 								</ul>
 							</div>
 						</div>
@@ -72,32 +73,92 @@
 					<div class="projects-grid">
 						<article class="project-card">
 							<div class="project-image">
-								<img src="assets/project1_photo.jpeg" alt="Project 1">
+								<img src="assets/cub3d_photo.png" alt="Project 1">
 							</div>
 							<div class="project-content">
 								<h3>Cub3D</h3>
-								<p>A 3D raycasting game inspired by Wolfenstein 3D, built in C with the MiniLibX graphics library.</p>
+								<p>A custom 3D game engine using raycasting technology. Renders textured environments with player movement, collision detection, and configurable maps built entirely in C with MiniLibX graphics library.</p>
+								<details class="project-details">
+									<summary>Key Features</summary>
+									<div class="details-content">
+										<ul>
+											<li>Raycasting engine using Digital Differential Analyzer algorithm</li>
+											<li>Player controls: move (W, A, S, D), rotate (←, →)</li>
+											<li>Custom map parser from .cub files</li>
+											<li>Textured walls (North, South, East, West)</li>
+											<li>Interactive doors — toggle open/close with a keypress (K)</li>
+											<li>Floor & ceiling color rendering</li>
+											<li>MiniLibX window rendering with pixel-perfect drawing</li>
+										</ul>
+									</div>
+								</details>
 								<div class="tech-stack">
 									<span class="tech-tag">C</span>
+									<span class="tech-tag">Git</span>
 								</div>
 								<div class="project-links">
-									<a href="https://github.com/ricvrdv/cub3d"><i class="fab fa-github"></i> Code</a>
+									<a href="https://github.com/ricvrdv/cub3d" target="_blank"><i class="fab fa-github"></i> Code</a>
 								</div>
 							</div>
 						</article>
 
 						<article class="project-card">
 							<div class="project-image">
-								<img src="assets/project2_photo.jpeg" alt="Project 2">
+								<img src="assets/minishell_photo.png" alt="Project 2">
 							</div>
 							<div class="project-content">
 								<h3>Minishell</h3>
-								<p>Building a Simple Unix Shell in C.</p>
+								<p>A functional UNIX command line interpreter featuring command execution, pipes, redirections, and built-in commands. Implements process management, signal handling, and environment variable expansion.</p>
+								<details class="project-details">
+									<summary>Key Features</summary>
+									<div class="details-content">
+										<ul>
+											<li>Syntax check and tokenization</li>
+											<li>Abstract Syntax Tree building</li>
+											<li>Heredoc execution</li>
+											<li>Expansion handling</li>
+											<li>Pipes and redirections</li>
+											<li>Built-in and external commands execution</li>
+											<li>Process synchronization and signal handling</li>
+										</ul>
+									</div>
+								</details>
+								<div class="tech-stack">
+									<span class="tech-tag">C</span>
+									<span class="tech-tag">Bash</span>
+									<span class="tech-tag">Git</span>
+								</div>
+								<div class="project-links">
+									<a href="https://github.com/ricvrdv/Minishell" target="_blank"><i class="fab fa-github"></i> Code</a>
+								</div>
+							</div>
+						</article>
+
+						<article class="project-card">
+							<div class="project-image">
+								<img src="assets/philo_simul.gif" alt="Project 3">
+							</div>
+							<div class="project-content">
+								<h3>Philosophers</h3>
+								<p>A concurrency simulation of the classic Dining Philosophers problem using POSIX threads in C. Each philosopher alternates between thinking, eating, and sleeping, all while sharing limited forks (resources) without encountering deadlocks or starvation.</p>
+								<details class="project-details">
+									<summary>Key Features</summary>
+									<div class="details-content">
+										<ul>
+											<li>Multi-threaded simulation</li>
+											<li>Precise timing control</li>
+											<li>Monitor thread to check philosopher death without busy-waiting</li>
+											<li>Mutex-based fork access ensuring no deadlocks</li>
+											<li>Desynchronization logic for concurrent start handling</li>
+											<li>Clean memory management</li>
+										</ul>
+									</div>
+								</details>
 								<div class="tech-stack">
 									<span class="tech-tag">C</span>
 								</div>
 								<div class="project-links">
-									<a href="https://github.com/ricvrdv/Minishell"><i class="fab fa-github"></i> Code</a>
+									<a href="https://github.com/ricvrdv/philosophers/tree/main" target="_blank"><i class="fab fa-github"></i> Code</a>
 								</div>
 							</div>
 						</article>
